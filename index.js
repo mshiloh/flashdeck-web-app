@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, "client", "build")));
 app.use("/api/decks", deckRouter);
 app.use("/api/cards", cardRouter);
 
-mongoose.connect("mongodb://localhost:27017/flashcards", (err) => {
+mongoose.connect(db, (err) => {
     if (err) console.error(err);
     console.log("Connected to MongoDB");
 })
