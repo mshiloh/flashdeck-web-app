@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=latin-ext');
+body {
+    display: grid;
+    grid-template-areas: "hdr" "cnt" "ftr"
+}
+
+.managerWrapper {
+    grid-area: cnt;
+    background: #FFF8E1;
+    height: 100vh;
+    grid-area: cnt;
+    list-style: none;
+    width: 100vw;
+}
+
+.newButt {
+    background-image: url("https://i.imgur.com/RlCkjA8.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #FFF8E1;
+    border-radius: 5px;
+}
+
+.new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newButt:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    font-weight: 700;
+    background-image: url("https://i.imgur.com/TcxZWO1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.managerUl {
+    margin: 0;
+    padding: 0;
+}
+
+.managerUl .managerLi {
+    list-style-type: none;
+    cursor: pointer;
+    position: relative;
+    background-image: url("https://i.imgur.com/QoUP4vb.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 3px solid #FFF8E1;
+}
+
+.managerUl .managerLi:nth-child(odd) {
+    background-image: url("https://i.imgur.com/QoUP4vb.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.managerUl .managerLi:hover {
+    background-image: url("https://i.imgur.com/gXojGr9.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+
+.managerDeckTitles {
+    color: #FFF8E1;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.edit {
+    text-decoration: none;
+    color: black;
+}
+
+/* Small Mobile*/
+
+@media only screen and (max-width: 600px) {
+    .managerWrapper {
+        padding: 6vw;
+    }
+    .managerUl .managerLi {
+        padding: 2vw 3vw 2vw 6vw;
+    }
+    .managerUl .managerLi:hover {
+        padding: 10px;
+    }
+    a {
+        font-size: 4.5vw;
+    }
+    .newButt {
+        font-size: 3vw;
+        margin-top: 2vw;
+    }
+}
+
+/* Large Mobile / Portrait Tablet */
+
+@media only screen and (min-width: 600px) {
+    .managerWrapper {
+        padding: 7vw;
+    }
+    .managerUl .managerLi {
+        padding: 1vw 2vw 1vw 6vw;
+    }
+    .managerUl .managerLi:hover {
+        padding: 10px;
+    }
+    a {
+        font-size: 4vw;
+    }
+    .newButt {
+        font-size: 3vw;
+        margin-top: 2vw;
+    }
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    .managerWrapper {
+        padding: 5vw;
+    }
+    .managerUl .managerLi {
+        padding: 1vw 2vw 1vw 6vw;
+    }
+    .managerUl .managerLi:hover {
+        padding: 10px;
+    }
+    a {
+        font-size: 2.9vw;
+    }
+    .newButt {
+        font-size: 2.5vw;
+        margin-top: 1.5vw;
+    }
+}
+
+/* Laptop/Desktop */
+
+@media only screen and (min-width: 992px) {
+    .managerWrapper {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .managerUl .managerLi {
+        padding: .8vw 1.8vw .8vw 4.5vw;
+    }
+    .managerUl .managerLi:hover {
+        padding: 10px;
+    }
+    a {
+        font-size: 2.5vw;
+    }
+    .newButt {
+        font-size: 2.5vw;
+        margin-top: 1.5vw;
+    }
+}
+
+/* Large Desktop */
+
+@media only screen and (min-width: 1200px) {
+    .managerWrapper {
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+    .managerUl .managerLi {
+        padding: .5vw 1.5vw .5vw 3vw;
+    }
+    .managerUl .managerLi:hover {
+        padding: 10px;
+    }
+    a {
+        font-size: 2vw;
+    }
+    .newButt {
+        font-size: 2vw;
+        margin-top: 1.8vw;
+    }
+}
+
+/* Extra Large Desktop */
+
+@media only screen and (min-width: 1500px) {
+    .managerWrapper {
+        padding-left: 12vw;
+        padding-right: 12vw;
+    }
+    .managerUl .managerLi {
+        padding: .5vw 1.5vw .5vw 2.5vw;
+    }
+    .managerUl .managerLi:hover {
+        padding: 10px;
+    }
+    a {
+        font-size: 1.6vw;
+    }
+    .newButt {
+        font-size: 1.8vw;
+        margin-top: 1.2vw;
+    }
+}

@@ -1,0 +1,369 @@
+.studyWrapper {
+    background: #FFF8E1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5vw;
+    flex: 50;
+}
+
+.wrapperQA {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerQ {
+    background-image: url("https://i.imgur.com/RlCkjA8.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: inset 10px #69452D;
+    color: white;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    min-height: 100px;
+}
+
+.correctAnswer {
+    margin-top: 10px;
+    padding: 10px;
+    color: rgb(14, 107, 14);
+    font-size: 5vw;
+    font-weight: 900;
+    text-align: center;
+}
+
+.answerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #FFF8E1;
+    background-color: none;
+}
+
+.answerInput {
+    width: 80vw;
+    font-weight: 600;
+    color: #422c25;
+    background: white;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+::placeholder {
+    color: #422c25;
+}
+
+.checkWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.checkButt {
+    cursor: pointer;
+    font-size: 4vw;
+    background-image: url("https://i.imgur.com/RlCkjA8.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    border-radius: 5px;
+}
+
+.checkButt:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    font-weight: 700;
+    background-image: url("https://i.imgur.com/TcxZWO1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.nextBackWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+.nextButt,
+.backButt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 6vw;
+    text-align: center;
+    width: 8.5vw;
+    background-image: url("https://i.imgur.com/RlCkjA8.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    color: white;
+    border-radius: 5px;
+}
+
+.nextButt:hover,
+.backButt:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    font-weight: 700;
+    background-image: url("https://i.imgur.com/TcxZWO1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Small Mobile*/
+
+@media only screen and (max-width: 600px) {
+    .wrapperQA {
+        padding-bottom: 20px;
+    }
+    .containerQ {
+        height: 20vh;
+        font-size: 4vh;
+        font-size: 4vw;
+    }
+    .correctAnswer {
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 5vw;
+    }
+    .answerForm {
+        padding: 10px;
+    }
+    .answerInput {
+        font-size: 3.6vw;
+    }
+    .checkWrapper {
+        padding: 10px;
+    }
+    .checkButt {
+        font-size: 3.5vw;
+    }
+    .nextButt,
+    .backButt {
+        font-size: 5.5vw;
+    }
+}
+
+/* Large Mobile / Portrait Tablet */
+
+@media only screen and (min-width: 600px) {
+    .wrapperQA {
+        padding-bottom: 20px;
+    }
+    .containerQ {
+        height: 20vh;
+        font-size: 4vh;
+        font-size: 4vw;
+    }
+    .correctAnswer {
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 5vw;
+    }
+    .answerForm {
+        padding: 10px;
+    }
+    .answerInput {
+        font-size: 3.4vw;
+    }
+    .checkWrapper {
+        padding: 5px;
+    }
+    .checkButt {
+        font-size: 3.5vw;
+    }
+    .nextButt,
+    .backButt {
+        font-size: 5.5vw;
+        margin-top: 5px;
+    }
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    .wrapperQA {
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+    .containerQ {
+        height: 20vh;
+        font-size: 3.5vh;
+        font-size: 3.5vw;
+    }
+    .correctAnswer {
+        margin-top: 10px;
+        padding: 20px;
+        font-size: 4vw;
+    }
+    .answerForm {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .answerInput {
+        font-size: 3vw;
+    }
+    .checkWrapper {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .checkButt {
+        font-size: 3vw;
+    }
+    .nextButt,
+    .backButt {
+        width: 7vw;
+        font-size: 4.5vw;
+    }
+}
+
+/* Laptop/Desktop */
+
+@media only screen and (min-width: 992px) {
+    .wrapperQA {
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+    .containerQ {
+        height: 20vh;
+        font-size: 2.5vh;
+        font-size: 2.5vw;
+    }
+    .correctAnswer {
+        margin-top: 10px;
+        padding: 20px;
+        font-size: 3vw;
+    }
+    .answerForm {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .answerInput {
+        font-size: 3vw;
+    }
+    .checkWrapper {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .checkButt {
+        font-size: 2.5vw;
+    }
+    .nextButt,
+    .backButt {
+        width: 6vw;
+        font-size: 4vw;
+    }
+}
+
+/* Large Desktop */
+
+@media only screen and (min-width: 1200px) {
+    .wrapperQA {
+        padding-bottom: 20px;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .containerQ {
+        height: 35vh;
+        font-size: 2vh;
+        width: 50vw;
+        font-size: 2vw;
+        padding: 10px;
+        min-height: 125px;
+    }
+    .correctAnswer {
+        margin-top: 10px;
+        padding: 15px;
+        font-size: 2.5vw;
+    }
+    .answerForm {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .answerInput {
+        font-size: 2.2vw;
+        width: 50vw;
+    }
+    .checkWrapper {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .checkButt {
+        font-size: 1.5vw;
+    }
+    .nextBackWrapper {
+        padding-right: 22.5vw;
+        padding-left: 22.5vw;
+    }
+    .nextButt,
+    .backButt {
+        width: 4vw;
+        font-size: 2.8vw;
+    }
+}
+
+/* Extra Large Desktop */
+
+@media only screen and (min-width: 1500px) {
+    .wrapperQA {
+        padding-bottom: 20px;
+        padding-top: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .containerQ {
+        height: 35vh;
+        font-size: 2vh;
+        width: 50vw;
+        font-size: 2vw;
+        padding: 10px;
+        min-height: 125px;
+    }
+    .correctAnswer {
+        margin-top: 10px;
+        padding: 15px;
+        font-size: 2vw;
+    }
+    .answerForm {
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .answerInput {
+        font-size: 2vw;
+        width: 50vw;
+    }
+    .checkWrapper {
+        padding: 10px;
+    }
+    .checkButt {
+        font-size: 1.5vw;
+    }
+    .nextBackWrapper {
+        padding-right: 22.5vw;
+        padding-left: 22.5vw;
+    }
+    .nextButt,
+    .backButt {
+        width: 4vw;
+        font-size: 2.8vw;
+    }
+}

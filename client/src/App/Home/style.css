@@ -1,0 +1,186 @@
+.homeWrapper {
+    background: #FFF8E1;
+    grid-area: cnt;
+    padding: 20px;
+    list-style: none;
+    flex: 3;
+}
+
+.homeHeader {
+    font-style: italic;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeUl {
+    margin: 0;
+    padding: 5px;
+}
+
+.homeUl .homeLi {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 2vw 3vw 2vw 6vw;
+    background-image: url("https://i.imgur.com/QoUP4vb.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 3px solid #FFF8E1;
+}
+
+.homeUl .homeLi:hover {
+    background-image: url("https://i.imgur.com/gXojGr9.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+
+a {
+    color: rgb(250, 244, 225);
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4.5vw;
+}
+
+/* Small Mobile*/
+
+@media only screen and (max-width: 600px) {
+    .homeWrapper {
+        padding: 4vw;
+        padding-right: 6vw;
+    }
+    .homeHeader {
+        font-size: 3vw;
+        padding: 1vw;
+    }
+    .homeUl .homeLi {
+        padding: 2vw 3vw 2vw 6vw;
+    }
+    .homeUl .homeLi:hover {
+        padding: 10px;
+    }
+    a {
+        font-size: 4.5vw;
+    }
+}
+
+/* Large Mobile / Portrait Tablet */
+
+@media only screen and (min-width: 600px) {
+    .homeWrapper {
+        padding: 3vw;
+        padding-right: 5vw;
+    }
+    .homeHeader {
+        font-size: 3vw;
+        padding: 1vw;
+    }
+    .homeUl .homeLi {
+        padding: 1vw 2vw 1vw 6vw;
+    }
+    .homeUl .homeLi:hover {
+        padding: 10px;
+    }
+    a {
+        font-size: 4vw;
+    }
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    .homeWrapper {
+        padding: 6vw;
+    }
+    .homeHeader {
+        font-size: 2.7vw;
+        margin-top: -25px;
+    }
+    .homeUl {
+        margin: 0;
+        padding: 1vw;
+    }
+    .homeUl .homeLi {
+        padding: 1vw 2vw 1vw 6vw;
+    }
+    .homeUl .homeLi:hover {
+        padding: 10px;
+    }
+    a {
+        font-size: 2.9vw;
+    }
+}
+
+/* Laptop/Desktop */
+
+@media only screen and (min-width: 992px) {
+    .homeWrapper {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .homeHeader {
+        font-size: 2.7vw;
+        padding: .5vw;
+    }
+    .homeUl .homeLi {
+        padding: .8vw 1.8vw .8vw 4.5vw;
+    }
+    .homeUl .homeLi:hover {
+        padding: 10px;
+    }
+    a {
+        font-size: 2.5vw;
+    }
+}
+
+/* Large Desktop */
+
+@media only screen and (min-width: 1200px) {
+    .homeWrapper {
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+    .homeHeader {
+        font-size: 2.3vw;
+        padding: .1vw;
+    }
+    .homeUl .homeLi {
+        padding: .5vw 1.5vw .5vw 3vw;
+    }
+    .homeUl .homeLi:hover {
+        padding: 10px;
+    }
+    a {
+        font-size: 2vw;
+    }
+}
+
+/* Extra Large Desktop */
+
+@media only screen and (min-width: 1500px) {
+    .homeWrapper {
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+    .homeHeader {
+        font-size: 2vw;
+        margin-top: -3.5vw;
+    }
+    .homeUl .homeLi {
+        padding: .5vw 1.5vw .5vw 2.5vw;
+    }
+    .homeUl .homeLi:hover {
+        padding: 10px;
+    }
+    a {
+        font-size: 1.6vw;
+    }
+}

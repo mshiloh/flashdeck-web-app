@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+html,
+body {
+    position: relative;
+    background: #FFF8E1;
+}
+
+.app-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFF8E1;
+}
+
+.headerWrapper {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://mfin.com/uploads/1510076904-ivana-cajina-316246.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.headerText {
+    font-family: 'Raleway', sans-serif;
+    color: #3A3027;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.navWrapper {
+    background-color: rgb(77, 51, 46);
+}
+
+.managerLink,
+.homeLink {
+    text-decoration: none;
+}
+
+.homeLink,
+.managerLink {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #DC403B;
+    color: #FFF8E1;
+}
+
+.footerWrapper {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(77, 51, 46);
+    width: 100vw;
+}
+
+footer {
+    color: #FFF8E1;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    padding: 2.5vw;
+    font-size: 2.8vw;
+    flex: .1;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Didact+Gothic|Dosis:200,300,400,500,600,700,800|Jura:300,400,600,700|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Oxygen:300,400,700|Poiret+One|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Questrial|Quicksand:300,400,500,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Righteous|Work+Sans:100,200,300,400,500,600,700,800,900&subset=latin-ext');
+/* Small Mobile*/
+
+@media only screen and (max-width: 600px) {
+    .headerWrapper {
+        flex: 1;
+        min-height: 125px;
+    }
+    .headerText {
+        padding: 5px;
+        font-size: 10vw;
+        font-weight: 600;
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+    .navWrapper {
+        height: auto;
+        padding: 8px;
+    }
+    .homeLink,
+    .managerLink {
+        font-size: 3.5vw;
+    }
+    footer {
+        padding: 1.8vw;
+        font-size: 2.6vw;
+    }
+}
+
+/* Large Mobile / Portrait Tablet */
+
+@media only screen and (min-width: 600px) {
+    .headerWrapper {
+        flex: 1;
+        min-height: 175px;
+    }
+    .headerText {
+        padding: 5px;
+        font-size: 10vw;
+        font-weight: 600;
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+    .navWrapper {
+        height: auto;
+        padding: 8px;
+    }
+    .homeLink,
+    .managerLink {
+        font-size: 3.2vw;
+    }
+    footer {
+        padding: 1.5vw;
+        font-size: 2vw;
+    }
+}
+
+/* Landscape Tablet */
+
+@media only screen and (min-width: 768px) {
+    .headerWrapper {
+        flex: 1;
+        min-height: 200px;
+    }
+    .headerText {
+        padding: 5px;
+        font-size: 8.5vw;
+        font-weight: 600;
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+    .navWrapper {
+        height: auto;
+        padding: 8px;
+    }
+    .homeLink,
+    .managerLink {
+        font-size: 2.3vw;
+    }
+    footer {
+        padding: 1.5vw;
+        font-size: 1.7vw;
+    }
+}
+
+/* Laptop/Desktop */
+
+@media only screen and (min-width: 992px) {
+    .headerWrapper {
+        flex: 1;
+        min-height: 225px;
+    }
+    .headerText {
+        padding: 5px;
+        font-size: 7.5vw;
+        font-weight: 600;
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+    .navWrapper {
+        height: auto;
+        padding: 8px;
+    }
+    .homeLink,
+    .managerLink {
+        font-size: 2vw;
+    }
+    footer {
+        padding: 1.8vw;
+        font-size: 1.6vw;
+    }
+}
+
+/* Large Desktop */
+
+@media only screen and (min-width: 1200px) {
+    .headerWrapper {
+        flex: 1;
+        min-height: 225px;
+    }
+    .headerText {
+        padding: 5px;
+        font-size: 6.5vw;
+        font-weight: 600;
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+    .navWrapper {
+        height: auto;
+        padding: 8px;
+    }
+    .homeLink,
+    .managerLink {
+        font-size: 1.5vw;
+    }
+    footer {
+        padding: 1vw;
+        font-size: 1.2vw;
+    }
+}
+
+/* Extra Large Desktop */
+
+@media only screen and (min-width: 1500px) {
+    .headerWrapper {
+        flex: 1;
+        min-height: 225px;
+    }
+    .headerText {
+        padding: 5px;
+        font-size: 6vw;
+        font-weight: 600;
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+    .navWrapper {
+        height: auto;
+        padding: 8px;
+    }
+    .homeLink,
+    .managerLink {
+        font-size: 1vw;
+    }
+    footer {
+        padding: 1vw;
+        font-size: 1vw;
+    }
+}
