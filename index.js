@@ -10,7 +10,7 @@ const cardRouter = require("./routes/cards.js");
 const app = express();
 
 //config
-const port = 8080;
+const port = process.env.PORT || 8080;
 const db = process.env.MONGODB_URI || "mongodb://localhost";
 
 //middleware
@@ -22,14 +22,17 @@ app.use(express.static(path.join(__dirname, "client", "build")));
 app.use("/api/decks", deckRouter);
 app.use("/api/cards", cardRouter);
 
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
+
 mongoose.connect(db, (err) => {
     if (err) console.error(err);
     console.log("Connected to MongoDB");
 })
 
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-});
+
 
 app.listen(
     app.listen(port, () => console.log("Server running on port " + port)));
