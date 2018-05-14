@@ -11,7 +11,7 @@ const app = express();
 
 //config
 const port = process.env.PORT || 8080;
-const db = process.env.MONGODB_URI || "mongodb://localhost";
+const db = process.env.MONGODB_URI || "mongodb://localhost/flashcards";
 
 //middleware
 app.use(bodyParser.json())
