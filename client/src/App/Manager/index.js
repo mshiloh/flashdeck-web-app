@@ -8,8 +8,8 @@ import Decks from "../Decks";
 
 function Manager(props) {
     const deckStyles = {
-        ul: "managerUl",
-        li: "managerLi"
+        div: "managerUl",
+        Link: "managerLi"
     }
     return (
         <div className="managerWrapper">

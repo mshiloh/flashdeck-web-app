@@ -1,53 +1,60 @@
 .homeWrapper {
-    background: #FFF8E1;
+    background: whitesmoke;
     grid-area: cnt;
     padding: 20px;
     list-style: none;
     flex: 3;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .homeHeader {
     font-style: italic;
     font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .homeUl {
     margin: 0;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.homeUl .homeLi {
-    list-style-type: none;
+.homeUl .homeLi{
+    height: auto;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    color:whitesmoke;
+    background-image: linear-gradient(to right, #F7B733 50%, #4ABDAC 50%);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
     cursor: pointer;
-    padding: 2vw 3vw 2vw 6vw;
-    background-image: url("https://i.imgur.com/QoUP4vb.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    transition: 0.2s;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 3px solid #FFF8E1;
-}
-
-.homeUl .homeLi:hover {
-    background-image: url("https://i.imgur.com/gXojGr9.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 10px;
-}
+    width: 80vw;
+  }
+   
+  .homeUl .homeLi:hover  {
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+    background-position: bottom left;
+  }
 
 a {
     color: rgb(250, 244, 225);
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-size: 4.5vw;
+    padding: 10px;
 }
 
 /* Small Mobile*/
@@ -55,7 +62,6 @@ a {
 @media only screen and (max-width: 600px) {
     .homeWrapper {
         padding: 4vw;
-        padding-right: 6vw;
     }
     .homeHeader {
         font-size: 3vw;
@@ -67,8 +73,11 @@ a {
     .homeUl .homeLi:hover {
         padding: 10px;
     }
+    .homeLi {
+        font-size: 5.5vw;
+    }
     a {
-        font-size: 4.5vw;
+        font-size: 3vw;
     }
 }
 
@@ -89,8 +98,11 @@ a {
     .homeUl .homeLi:hover {
         padding: 10px;
     }
-    a {
+    .homeLi {
         font-size: 4vw;
+    }
+    a {
+        font-size: 2.5vw;
     }
 }
 
@@ -114,9 +126,13 @@ a {
     .homeUl .homeLi:hover {
         padding: 10px;
     }
-    a {
-        font-size: 2.9vw;
+    .homeLi {
+        font-size: 4vw;
     }
+    a {
+        font-size: 2.5vw;
+    }
+
 }
 
 /* Laptop/Desktop */

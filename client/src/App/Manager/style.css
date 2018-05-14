@@ -1,30 +1,10 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=latin-ext');
-body {
-    display: grid;
-    grid-template-areas: "hdr" "cnt" "ftr"
-}
-
 .managerWrapper {
+    background: whitesmoke;
     grid-area: cnt;
-    background: #FFF8E1;
-    height: 100vh;
-    grid-area: cnt;
+    padding: 20px;
     list-style: none;
+    flex: 3;
     width: 100vw;
-}
-
-.newButt {
-    background-image: url("https://i.imgur.com/RlCkjA8.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: #FFF8E1;
-    border-radius: 5px;
 }
 
 .new {
@@ -33,58 +13,76 @@ body {
     align-items: center;
 }
 
-.newButt:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    cursor: pointer;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    cursor: pointer;
-    font-weight: 700;
-    background-image: url("https://i.imgur.com/TcxZWO1.jpg");
+.newButt {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border: solid 2px #F7B733;
+    font-weight: 600;
+    color: #F7B733;
+    background-image: linear-gradient(to right, #F7B733 50%, white 50%);
+    background-size: 200% 100%;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: bottom right;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.newButt:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    transform: translateY(2px);
+    font-weight: 800;
+    color: white;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background-position: bottom left;
 }
 
 .managerUl {
     margin: 0;
-    padding: 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .managerUl .managerLi {
-    list-style-type: none;
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    color: whitesmoke;
+    background-image: linear-gradient(to right, #F7B733 50%, #4ABDAC 50%);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
     cursor: pointer;
-    position: relative;
-    background-image: url("https://i.imgur.com/QoUP4vb.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    transition: 0.2s;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 3px solid #FFF8E1;
-}
-
-.managerUl .managerLi:nth-child(odd) {
-    background-image: url("https://i.imgur.com/QoUP4vb.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    width: 80vw;
 }
 
 .managerUl .managerLi:hover {
-    background-image: url("https://i.imgur.com/gXojGr9.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 10px;
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+    background-position: bottom left;
 }
 
-.managerDeckTitles {
-    color: #FFF8E1;
+a {
+    color: rgb(250, 244, 225);
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
+    font-size: 4.5vw;
 }
 
 .edit {
@@ -108,7 +106,7 @@ body {
         font-size: 4.5vw;
     }
     .newButt {
-        font-size: 3vw;
+        font-size: 3.5vw;
         margin-top: 2vw;
     }
 }
@@ -129,7 +127,7 @@ body {
         font-size: 4vw;
     }
     .newButt {
-        font-size: 3vw;
+        font-size: 3.3vw;
         margin-top: 2vw;
     }
 }

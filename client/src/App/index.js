@@ -3,7 +3,7 @@ import { Switch, Route, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { getCards } from "../redux/cards.js";
 import { getDecks } from "../redux/decks.js";
-import "./style.css";
+
 import Header from "./Header.js";
 import Nav from "./Nav.js";
 import Home from "./Home";

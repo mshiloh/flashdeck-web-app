@@ -1,16 +1,18 @@
 .editWrapper {
-    padding: 20px;
     padding-top: 10px;
-    background: #FFF8E1;
+    background: whitesmoke;
     display: flex;
     flex-direction: column;
+    align-content: center;
     align-items: center;
+    align-self: center;
     overflow: auto;
     flex: 3;
     width: 100vw;
 }
 
-.editForm {
+.editForm,
+.newCardForm {
     margin-bottom: 20px;
     font-size: 3vw;
 }
@@ -24,17 +26,17 @@
     align-content: center;
     align-items: center;
     align-self: center;
-    padding: 10vw;
 }
 
 .qAndAHeader,
 .titleHeader {
     font-size: 3.5vw;
-    color: #422c25;
+    color: #4ABDAC;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 800;
 }
 
 input {
@@ -46,29 +48,91 @@ input {
     min-height: 20px;
     font-size: 2.2vw;
     border-radius: 1px;
-    background: #563931;
-    color: #FFF8E1;
     border-radius: 2px;
     margin: 3px;
     padding: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
     font-weight: 600;
+    color: black;
 }
 
 input:focus {
     outline: none;
-    border-color: rgb(158, 82, 28);
+    border-color: #F7B733;
     box-shadow: 0 0 10px #563931;
 }
 
 ::placeholder {
     font-weight: 600;
+    color: black;
+}
+
+.addNewCardButt:focus {
+    outline: none;
+}
+
+.addNewCardButt {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border: solid 2px #F7B733;
+    font-weight: 600;
+    color: #F7B733;
+    background-image: linear-gradient(to right, #F7B733 50%, white 50%);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    text-align: center;
+}
+
+.addNewCardButt:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    transform: translateY(2px);
+    font-weight: 800;
+    color: white;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background-position: bottom left;
+}
+
+.saveButt,
+.deleteButt,
+.saveNewButt {
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 2vw;
+    background: #4ABDAC;
+    color: whitesmoke;
+}
+
+.deleteButt:hover,
+.saveButt:hover,
+.saveNewButt:hover,
+.saveNewCardButt:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    font-weight: 700;
 }
 
 .newCardWrapper {
     display: flex;
     flex: 1;
+}
+
+.newCardHeader {
+    padding-bottom: 10px;
+    color: #422c25;
 }
 
 .newCardButt {
@@ -81,7 +145,6 @@ input:focus {
     background-position: center;
     background-size: cover;
     color: white;
-    border-radius: 5px;
 }
 
 .newCardButt:hover {
@@ -94,105 +157,7 @@ input:focus {
     background-size: cover;
 }
 
-
-.saveButt,
-.deleteButt,
-.saveNewButt{
-    margin-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    font-size: 2vw;
-    background-image: url("https://i.imgur.com/RlCkjA8.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    border-radius: 5px;
-}
-
-
-.saveNewCardButt {
-    margin-right: 5px;
-    margin-top: 5px;
-    cursor: pointer;
-    font-size: 2vw;
-    background-image: url("https://i.imgur.com/RlCkjA8.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    border-radius: 5px;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-}
-
-.addNewCardButt:focus {
-    outline: none;
-}
-
-.addNewCardButt {
-    padding: 5px;
-    text-align: center;
-    margin-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    font-size: 2vw;
-    background-image: url("https://i.imgur.com/gr8kZIG.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    border-radius: 5px;
-}
-
-.deleteButt:hover,
-.saveButt:hover,
-.saveNewButt:hover,
-.saveNewCardButt:hover,
-.addNewCardButt:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    cursor: pointer;
-    font-weight: 700;
-    background-image: url("https://i.imgur.com/5ORKtAd.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.saveDiscardWrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.newCardHeader {
-    padding-bottom: 10px;
-    color: #422c25;
-}
-
-.newAnswer,
-.newQuestion {
-    color: #FFF8E1;
-    font-weight: 600;
-}
-
-.newQuestion::placeholder,
-.newAnswer::placeholder {
-    color: #FFF8E1;
-    font-weight: 600;
-}
-
-/* ------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Small Mobile*/
 
@@ -217,15 +182,14 @@ input:focus {
         width: 90vw;
         height: 4.5vw;
         min-height: 20px;
-        font-size: 2.2vw;
+        font-size: 2.8vw;
         margin: 3px;
     }
-
-    .addNewCardButt{
+    .addNewCardButt {
         width: 90vw;
     }
     .newCardButt {
-        font-size: 2.3vw;
+        font-size: 2.5vw;
     }
     .saveButt,
     .deleteButt,
@@ -233,11 +197,10 @@ input:focus {
         margin-right: 5px;
         margin-top: 5px;
         margin-bottom: 20px;
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
-
     .addNewCardButt {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
     .newCardHeader {
         padding-bottom: 10px;
@@ -270,11 +233,11 @@ input:focus {
         font-size: 2.5vw;
         margin: 3px;
     }
-    .addNewCardButt{
+    .addNewCardButt {
         width: 90vw;
     }
     .newCardButt {
-        font-size: 2.3vw;
+        font-size: 2.8vw;
     }
     .saveButt,
     .deleteButt,
@@ -283,11 +246,10 @@ input:focus {
         margin-right: 5px;
         margin-top: 5px;
         margin-bottom: 10px;
-        font-size: 2vw;
+        font-size: 2.8vw;
     }
-
     .addNewCardButt {
-        font-size: 2vw;
+        font-size: 2.8vw;
     }
     .newCardHeader {
         padding-bottom: 10px;
@@ -320,25 +282,26 @@ input:focus {
         font-size: 1.8vw;
         margin: 3px;
     }
-    .addNewCardButt{
+    .addNewCardButt {
         width: 80vw;
+        font-size: 3vw;
     }
     .newCardButt {
-        font-size: 2.3vw;
+        font-size: 2.8vw;
     }
     .saveButt,
     .deleteButt,
     .saveNewButt,
     .saveNewCardButt,
-    .addNewCardButt   {
+    .addNewCardButt {
         margin-right: 5px;
         margin-top: 5px;
         margin-bottom: 10px;
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
     .newCardHeader {
         padding-bottom: 10px;
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 }
 
@@ -368,7 +331,7 @@ input:focus {
         font-size: 1.2vw;
         margin: 3px;
     }
-    .addNewCardButt{
+    .addNewCardButt {
         width: 80vw;
     }
     .newCardButt {
@@ -378,13 +341,12 @@ input:focus {
     .deleteButt,
     .saveNewButt,
     .saveNewCardButt,
-    .addNewCardButt   {
+    .addNewCardButt {
         margin-right: 5px;
         margin-top: 5px;
         margin-bottom: 10px;
         font-size: 1.3vw;
-    } 
-    
+    }
     .newCardHeader {
         padding-bottom: 10px;
         font-size: 2vw;
@@ -417,7 +379,7 @@ input:focus {
         font-size: 1.5vw;
         margin: 3px;
     }
-    .addNewCardButt{
+    .addNewCardButt {
         width: 75vw;
     }
     .newCardButt {
@@ -427,7 +389,7 @@ input:focus {
     .deleteButt,
     .saveNewButt,
     .saveNewCardButt,
-    .addNewCardButt  {
+    .addNewCardButt {
         margin-right: 5px;
         margin-top: 5px;
         margin-bottom: 10px;
@@ -463,7 +425,7 @@ input:focus {
         font-size: 1vw;
         margin: 3px;
     }
-    .addNewCardButt{
+    .addNewCardButt {
         width: 75vw;
     }
     .newCardButt {
@@ -473,12 +435,12 @@ input:focus {
     .deleteButt,
     .saveNewButt,
     .saveNewCardButt,
-    .addNewCardButt  {
+    .addNewCardButt {
         margin-right: 5px;
         margin-top: 5px;
         margin-bottom: 10px;
         font-size: 1vw;
-    } 
+    }
     .newCardHeader {
         padding-bottom: 10px;
         font-size: 1.6vw;

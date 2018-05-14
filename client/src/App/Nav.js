@@ -6,8 +6,8 @@ function Nav(props) {
         <div className="navWrapper">
 
             <nav>
-                <Link to="/" className="homeLink">Home</Link>
-                <Link to="/manager" className="managerLink">Deck Manager</Link>
+                <Link to="/" className="homeLink">home</Link>
+                <Link to="/manager" className="managerLink">deck manager</Link>
             </nav>
         </div>
     )

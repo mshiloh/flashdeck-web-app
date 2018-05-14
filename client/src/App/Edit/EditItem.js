@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 import { connect } from "react-redux";
 import { editCard } from "../../redux/cards.js";
 import { removeCard } from "../../redux/cards.js";
@@ -47,13 +47,14 @@ class EditItem extends Component {
         const { question, answer, _id, endpoint } = this.state.inputs;
         return (
             <form onSubmit={this.handleSubmit} className="editForm">
+                
+                    <input onChange={this.handleChange} className="editQuestion" type="text" value={question} name="question" />
 
-                <input onChange={this.handleChange} className="editQuestion" type="text" value={question} name="question" />
+                    <input onChange={this.handleChange} className="editAnswer" type="text" value={answer} name="answer" />
+                    
+                <button className="saveButt">Save</button>
 
-                <input onChange={this.handleChange} className="editAnswer" type="text" value={answer} name="answer" />
-
-                  <button className="saveButt">Save</button>
-                    <button className="deleteButt" onClick={this.handleDelete}>Delete</button>
+                <button className="deleteButt" onClick={this.handleDelete}>Delete</button>
             </form>
         )
     }

@@ -6,14 +6,14 @@ import Decks from "../Decks";
 
 function Home(props) {
         const deckStyles = {
-                ul: "homeUl",
-                li: "homeLi"
+                div: "homeUl",
+                Link: "homeLi"
         }
 
         return (
                 <div className="homeWrapper">
                         <p className="homeHeader">Click on a deck title to study the flashcards</p>
-                        <br/>
+                        <br />
                         <Decks deckStyles={deckStyles} endpoint="study">
                         </Decks>
                 </div>

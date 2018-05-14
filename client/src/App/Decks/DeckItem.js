@@ -5,9 +5,7 @@ function DeckItem(props) {
     const { title, _id, endpoint } = props;
     return (
 
-        <li className={props.liStyles}>
-            <Link to={`/${endpoint}/${_id}/`}>{title}</Link>
-        </li>
+            <Link className={props.liStyles} to={`/${endpoint}/${_id}/`}>{title}</Link>
     )
 }
 export default DeckItem;

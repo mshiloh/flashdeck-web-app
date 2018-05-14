@@ -72,22 +72,21 @@ class Edit extends Component {
                     <NewCard deckId={this.props.match.params.deckId}></NewCard>
                 </div>
                 <div className="editFormWrapper">
-                    <form className="fullEditForm" onSubmit={this.handleSubmit}>
+                    <form onSubmit={this.handleSubmit}>
 
                         <div className="editTitleWrapper">
                             <h3 className="titleHeader">Deck Title</h3>
                             <input onChange={this.handleChange} type="text" value={title} />
                         </div>
+                            <button className="saveButt">Save</button>
 
-                        <button className="saveButt">Save</button>
-
-                        <button className="deleteButt" onClick={this.handleDelete}>Delete</button>
-
+                            <button className="deleteButt" onClick={this.handleDelete}>Delete</button>
                     </form>
 
-                    <h3 className="qAndAHeader">Question & Answer Cards</h3>
+                    <h3 className="qAndAHeader">Flashcards</h3>
 
                     {editCards}
+
                 </div>
             </div>
         )

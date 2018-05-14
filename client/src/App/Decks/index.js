@@ -9,11 +9,10 @@ import DeckItem from "./DeckItem.js";
 class Decks extends Component {
     componentDidMount() {
         this.props.getDecks();
-
     }
     render() {
         const { data, loading, errMsg, endpoint } = this.props;
-        const myDecks = data.map((deck, i) => <DeckItem endpoint={endpoint}liStyles={this.props.deckStyles.li} key={deck + i} {...deck}></DeckItem>)
+        const myDecks = data.map((deck, i) => <DeckItem endpoint={endpoint}liStyles={this.props.deckStyles.Link} key={deck + i} {...deck}></DeckItem>)
         if (loading) {
             return (
                 <div>...Loading</div>
@@ -24,9 +23,9 @@ class Decks extends Component {
             )
         } else {
             return (
-                <ul className={this.props.deckStyles.ul}>
+                <div className={this.props.deckStyles.div}>
                     {myDecks}
-                </ul>
+                </div>
             )
         }
     }
