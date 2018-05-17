@@ -1,36 +1,34 @@
 .homeWrapper {
-    background: whitesmoke;
     grid-area: cnt;
-    padding: 20px;
-    list-style: none;
-    flex: 3;
-    width: 100vw;
     display: flex;
+    flex: 3;
     flex-direction: column;
     align-items: center;
+    background: whitesmoke;
+    list-style: none;
+    width: 100vw;
 }
 
 .homeHeader {
+    text-align: center;
+    padding-top: 20px;
     font-style: italic;
     font-weight: 600;
-    text-align: center;
 }
 
 .homeUl {
     margin: 0;
-    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.homeUl .homeLi{
+.homeUl .homeLi {
     height: auto;
     overflow: hidden;
     display: block;
-    margin: 0 auto;
     text-decoration: none;
-    color:whitesmoke;
+    color: whitesmoke;
     background-image: linear-gradient(to right, #F7B733 50%, #4ABDAC 50%);
     background-size: 200% 100%;
     background-repeat: no-repeat;
@@ -39,45 +37,34 @@
     -moz-transition: all 0.25s ease-in;
     transition: all 0.25s ease-in;
     cursor: pointer;
-    width: 80vw;
-  }
-   
-  .homeUl .homeLi:hover  {
+    width: 90vw;
+}
+
+.homeUl .homeLi:hover {
     -webkit-transition: all 0.25s ease-in;
     -moz-transition: all 0.25s ease-in;
     transition: all 0.25s ease-in;
     background-position: bottom left;
-  }
+}
 
-a {
-    color: rgb(250, 244, 225);
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 4.5vw;
-    padding: 10px;
+.homeLi {
+    margin-bottom: 2vw;
 }
 
 /* Small Mobile*/
 
 @media only screen and (max-width: 600px) {
-    .homeWrapper {
-        padding: 4vw;
-    }
     .homeHeader {
-        font-size: 3vw;
-        padding: 1vw;
+        font-size: 3.5vw;
     }
     .homeUl .homeLi {
-        padding: 2vw 3vw 2vw 6vw;
+        padding: 1.5vw 3vw 1.5vw 6vw;
     }
     .homeUl .homeLi:hover {
         padding: 10px;
     }
     .homeLi {
-        font-size: 5.5vw;
-    }
-    a {
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
 }
 
@@ -101,17 +88,11 @@ a {
     .homeLi {
         font-size: 4vw;
     }
-    a {
-        font-size: 2.5vw;
-    }
 }
 
 /* Tablet */
 
 @media only screen and (min-width: 768px) {
-    .homeWrapper {
-        padding: 6vw;
-    }
     .homeHeader {
         font-size: 2.7vw;
         margin-top: -25px;
@@ -121,18 +102,14 @@ a {
         padding: 1vw;
     }
     .homeUl .homeLi {
-        padding: 1vw 2vw 1vw 6vw;
+        padding: .5vw 2vw .5vw 6vw;
     }
     .homeUl .homeLi:hover {
         padding: 10px;
     }
     .homeLi {
-        font-size: 4vw;
+        font-size: 3vw;
     }
-    a {
-        font-size: 2.5vw;
-    }
-
 }
 
 /* Laptop/Desktop */
@@ -152,9 +129,6 @@ a {
     .homeUl .homeLi:hover {
         padding: 10px;
     }
-    a {
-        font-size: 2.5vw;
-    }
 }
 
 /* Large Desktop */
@@ -166,16 +140,13 @@ a {
     }
     .homeHeader {
         font-size: 2.3vw;
-        padding: .1vw;
+        padding: 0;
     }
     .homeUl .homeLi {
         padding: .5vw 1.5vw .5vw 3vw;
     }
     .homeUl .homeLi:hover {
         padding: 10px;
-    }
-    a {
-        font-size: 2vw;
     }
 }
 
@@ -195,8 +166,5 @@ a {
     }
     .homeUl .homeLi:hover {
         padding: 10px;
-    }
-    a {
-        font-size: 1.6vw;
     }
 }

@@ -31,10 +31,10 @@ export default class CardsItem extends Component {
             <div className="wrapperQA">
                 <div className="containerQ">
                     {this.state.showQuestion ?
-                        <p>{question}</p> : null
+                        <p className="cardContent">{question}</p> : null
                     }
                     {this.state.showAnswer ?
-                        <p>{answer}</p> : null
+                        <p className="cardContent">{answer}</p> : null
                     }
 
                 </div>
