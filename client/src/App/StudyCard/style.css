@@ -133,9 +133,9 @@
 /* Large Mobile / Portrait Tablet */
 
 @media only screen and (min-width: 600px) {
-    .wrapperQA {
+    /* .wrapperQA { */
         /* padding-bottom: 20px; */
-    }
+    /* } */
     .containerQ {
         height: 20vh;
         font-size: 4vh;
