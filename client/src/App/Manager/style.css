@@ -6,18 +6,24 @@
     align-items: center;
     background: whitesmoke;
     list-style: none;
-    overflow: scroll;    
-    width: 100vw;
+    overflow: scroll;
+    padding-bottom: 20px;
+}
+
+.managerContainer {
+    width: 90vw;
 }
 
 .managerHeader {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-style: italic;
     font-weight: 600;
-    text-align: center;
+    font-size: 1.1em;
 }
 
 .managerUl {
-    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,9 +31,6 @@
 
 .managerUl .managerLi {
     height: auto;
-    overflow: hidden;
-    display: block;
-    /* margin: 0 auto; */
     text-decoration: none;
     color: whitesmoke;
     background-image: linear-gradient(to right, #F7B733 50%, #4ABDAC 50%);
@@ -38,8 +41,9 @@
     -moz-transition: all 0.25s ease-in;
     transition: all 0.25s ease-in;
     cursor: pointer;
-    overflow: visible;    
-    width: 90vw;
+    height: auto;
+    overflow: visible;
+    padding: 12px 12px 12px 25px;
 }
 
 .managerUl .managerLi:hover {
@@ -47,10 +51,12 @@
     -moz-transition: all 0.25s ease-in;
     transition: all 0.25s ease-in;
     background-position: bottom left;
+    padding: 10px;
 }
 
 .managerLi {
-    margin: 1vw;
+    margin-bottom: .5em;
+    font-size: 1.25em;
 }
 
 .newButt {
@@ -67,10 +73,15 @@
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border: solid 3.5px #F7B733;
-    font-weight: 600;
+    border-top: solid 3.5px #F7B733;
+    border-right: solid 3.5px #F7B733;
+    border-bottom: solid 3.5px #F7B733;
+    font-weight: 500;
     color: #F7B733;
-   
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 1.3em;
 }
 
 .newButt:hover {
@@ -84,369 +95,82 @@
     background-position: bottom left;
 }
 
-/* Small Mobile*/
-
-@media only screen and (max-width: 600px) {
-    .managerWrapper {
-        padding: 4vw;
-    }
-    .managerHeader {
-        font-size: 3vw;
-        padding: 1vw;
-    }
-    .managerUl .managerLi {
-        padding: 1.5vw 3vw 1.5vw 6vw;
-    }
-    .managerUl .managerLi:hover {
-        padding: 10px;
-    }
-    .managerLi {
-        font-size: 4.5vw;
-    }
-    .newButt {
-        font-size: 3.5vw;
-        margin-top: 2vw;
-    }
-}
-
 /* Large Mobile / Portrait Tablet */
 
 @media only screen and (min-width: 600px) {
-    .managerWrapper {
-        padding: 3vw;
-        padding-right: 5vw;
-    }
     .managerHeader {
-        font-size: 3vw;
-        padding: 1vw;
-    }
-    .managerUl .managerLi {
-        padding: 1vw 2vw 1vw 6vw;
-    }
-    .managerUl .managerLi:hover {
-        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 1.5em;
     }
     .managerLi {
-        font-size: 4vw;
+        font-size: 1.7em;
     }
     .newButt {
-        font-size: 3.3vw;
-        margin-top: 2vw;
+        font-size: 1.5em;
     }
 }
 
 /* Tablet */
 
 @media only screen and (min-width: 768px) {
-    .managerWrapper {
-        padding: 6vw;
-    }
     .managerHeader {
-        font-size: 2.7vw;
-        margin-top: -25px;
-    }
-    .managerUl {
-        margin: 0;
-        padding: 1vw;
-    }
-    .managerUl .managerLi {
-        padding: 1vw 2vw 1vw 6vw;
-    }
-    .managerUl .managerLi:hover {
-        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 1.5em;
     }
     .managerLi {
-        font-size: 4vw;
+        font-size: 1.7em;
     }
     .newButt {
-        font-size: 2.5vw;
-        margin-top: 1.5vw;
+        font-size: 1.5em;
     }
 }
 
 /* Laptop/Desktop */
 
 @media only screen and (min-width: 992px) {
-    .managerWrapper {
-        padding-left: 10vw;
-        padding-right: 10vw;
+    .managerContainer {
+        width: 80vw;
     }
     .managerHeader {
-        font-size: 2.7vw;
-        padding: .5vw;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 1.5em;
     }
-    .managerUl .managerLi {
-        padding: .8vw 1.8vw .8vw 4.5vw;
-    }
-    .managerUl .managerLi:hover {
-        padding: 10px;
-    }
-    .newButt {
-        font-size: 2.5vw;
-        margin-top: 1.5vw;
+    .managerLi {
+        font-size: 1.7em;
     }
 }
 
 /* Large Desktop */
 
 @media only screen and (min-width: 1200px) {
-    .managerWrapper {
-        padding-left: 15vw;
-        padding-right: 15vw;
+    .managerContainer {
+        width: 75vw;
     }
     .managerHeader {
-        font-size: 2.3vw;
-        padding: .1vw;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 1.5em;
     }
-    .managerUl .managerLi {
-        padding: .5vw 1.5vw .5vw 3vw;
-    }
-    .managerUl .managerLi:hover {
-        padding: 10px;
-    }
-    .newButt {
-        font-size: 2vw;
-        margin-top: 1.8vw;
+    .managerLi {
+        font-size: 1.7em;
     }
 }
 
 /* Extra Large Desktop */
 
 @media only screen and (min-width: 1500px) {
-    .managerWrapper {
-        padding-left: 15vw;
-        padding-right: 15vw;
+    .managerContainer {
+        width: 75vw;
     }
     .managerHeader {
-        font-size: 2vw;
-        margin-top: -3.5vw;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 1.5em;
     }
-    .managerUl .managerLi {
-        padding: .5vw 1.5vw .5vw 2.5vw;
-    }
-    .managerUl .managerLi:hover {
-        padding: 10px;
-    }
-    .newButt {
-        font-size: 1.8vw;
-        margin-top: 1.2vw;
+    .managerLi {
+        font-size: 1.7em;
     }
 }
-
-/* .managerWrapper {
-    grid-area: cnt;
-    flex: 3;
-    background: whitesmoke;
-    list-style: none;
-    width: 100vw;
-}
-
-.new {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.newButt {
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-decoration: none;
-    border: solid 2px #F7B733;
-    font-weight: 600;
-    color: #F7B733;
-    background-image: linear-gradient(to right, #F7B733 50%, white 50%);
-    background-size: 200% 100%;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
-
-.newButt:hover {
-    cursor: pointer;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
-    transform: translateY(2px);
-    font-weight: 800;
-    color: white;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-    background-position: bottom left;
-}
-
-.managerUl {
-    margin: 0;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.managerUl .managerLi {
-    width: 200px;
-    height: auto;
-    overflow: hidden;
-    display: block;
-    margin: 0 auto;
-    text-decoration: none;
-    color: whitesmoke;
-    background-image: linear-gradient(to right, #F7B733 50%, #4ABDAC 50%);
-    background-size: 200% 100%;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    -webkit-transition: all 0.25s ease-in;
-    -moz-transition: all 0.25s ease-in;
-    transition: all 0.25s ease-in;
-    cursor: pointer;
-    width: 80vw;
-}
-
-.managerUl .managerLi:hover {
-    -webkit-transition: all 0.25s ease-in;
-    -moz-transition: all 0.25s ease-in;
-    transition: all 0.25s ease-in;
-    background-position: bottom left;
-}
-
-a {
-    color: rgb(250, 244, 225);
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 4.5vw;
-}
-
-.edit {
-    text-decoration: none;
-    color: black;
-}
-
-/* Small Mobile*/
-
-/* 
-@media only screen and (max-width: 600px) {
-    .managerWrapper {
-        padding: 6vw;
-    }
-    .managerUl .managerLi {
-        padding: 2vw 3vw 2vw 6vw;
-    }
-    .managerUl .managerLi:hover {
-        padding: 10px;
-    }
-    a {
-        font-size: 4.5vw;
-    }
-    .newButt {
-        font-size: 3.5vw;
-        margin-top: 2vw;
-    }
-}  */
-
-/* Large Mobile / Portrait Tablet */
-
-/* @media only screen and (min-width: 600px) {
-    .managerWrapper {
-        padding: 7vw;
-    }
-    .managerUl .managerLi {
-        padding: 1vw 2vw 1vw 6vw;
-    }
-    .managerUl .managerLi:hover {
-        padding: 10px;
-    }
-    a {
-        font-size: 4vw;
-    }
-    .newButt {
-        font-size: 3.3vw;
-        margin-top: 2vw;
-    }
-} */
-
-/* Tablet */
-
-/* @media only screen and (min-width: 768px) {
-    .managerWrapper {
-        padding: 5vw;
-    }
-    .managerUl .managerLi {
-        padding: 1vw 2vw 1vw 6vw;
-    }
-    .managerUl .managerLi:hover {
-        padding: 10px;
-    }
-    a {
-        font-size: 2.9vw;
-    }
-    .newButt {
-        font-size: 2.5vw;
-        margin-top: 1.5vw;
-    }
-} */
-
-/* Laptop/Desktop */
-
-/* 
-@media only screen and (min-width: 992px) {
-    .managerWrapper {
-        padding-left: 10vw;
-        padding-right: 10vw;
-    }
-    .managerUl .managerLi {
-        padding: .8vw 1.8vw .8vw 4.5vw;
-    }
-    .managerUl .managerLi:hover {
-        padding: 10px;
-    }font-size: 2.5vw;
-    
-    .newButt {
-        font-size: 2.5vw;
-        margin-top: 1.5vw;
-    }
-}
-
-/* Large Desktop */
-
-/* @media only screen and (min-width: 1200px) {
-    .managerWrapper {
-        padding-left: 15vw;
-        padding-right: 15vw;
-    }
-    .managerUl .managerLi {
-        padding: .5vw 1.5vw .5vw 3vw;
-    }
-    .managerUl .managerLi:hover {
-        padding: 10px;
-    }
-    .newButt {
-        font-size: 2vw;
-        margin-top: 1.8vw;
-    }
-}  */
-
-/* Extra Large Desktop */
-
-/* 
-@media only screen and (min-width: 1500px) {
-    .managerWrapper {
-        padding-left: 12vw;
-        padding-right: 12vw;
-    }
-    .managerUl .managerLi {
-        padding: .5vw 1.5vw .5vw 2.5vw;
-    }
-    .managerUl .managerLi:hover {
-        padding: 10px;
-    }
-    a {
-        font-size: 1.6vw;
-    }
-    .newButt {
-        font-size: 1.8vw;
-        margin-top: 1.2vw;
-    }
-} */

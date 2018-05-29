@@ -4,8 +4,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 1.5em;
-    height: 100vw;
-    flex: 3.5;
+    flex: 3;
 }
 
 .wrapperQA {
@@ -13,10 +12,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    word-wrap: normal;
 }
 
-.containerQ {
+.containerQA {
     background: #4ABDAC;
     color: white;
     display: flex;
@@ -25,17 +24,11 @@
     align-items: center;
     padding: 20px;
     height: 40vh;
+    width: 90%;
 }
 
-.correctAnswer {
-    background: #4ABDAC;
-    color: white;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    height: 40vh;
+.cardContent {
+    font-size: 1.5em;
 }
 
 .answerForm {
@@ -122,39 +115,106 @@
 /* Large Mobile / Portrait Tablet */
 
 @media only screen and (min-width: 600px) {
-    /* .containerQ {
+    .studyWrapper {
+        padding: 2em;
     }
-    .answerForm {
+    .containerQA {
+        height: 35vh;
     }
     .answerInput {
+        font-size: 1.2em;
     }
     .checkButt {
+        font-size: 1.5em;
     }
     .nextButt,
     .backButt {
-    } */
+        margin-top: 25px;
+        font-size: 6.5em;
+    }
 }
 
 /* Tablet */
 
 @media only screen and (min-width: 768px) {
-  
+    .studyWrapper {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    .containerQA {
+        height: 35vh;
+    }
+    .answerInput {
+        font-size: 1.2em;
+    }
+    .checkButt {
+        font-size: 1.5em;
+    }
+    .nextButt,
+    .backButt {
+        margin-top: 25px;
+        padding-left: .3em;
+        padding-right: .3em;
+        font-size: 6.5em;
+    }
 }
 
 /* Laptop/Desktop */
 
-@media only screen and (min-width: 992px) {
-  
-}
+@media only screen and (min-width: 992px) {}
 
 /* Large Desktop */
 
 @media only screen and (min-width: 1200px) {
-
+    .studyWrapper {
+        padding: 2em;
+    }
+    .containerQA {
+        height: 35vh;
+        width: 75%;
+    }
+    .answerForm {
+        width: 75%;
+    }
+    .answerInput {
+        font-size: 1.2em;
+    }
+    .checkButt {
+        font-size: 1.5em;
+    }
+    .nextButt,
+    .backButt {
+        margin-top: 25px;
+        padding-left: 1.3em;
+        padding-right: 1.3em;
+        font-size: 6.5em;
+    }
 }
 
 /* Extra Large Desktop */
 
 @media only screen and (min-width: 1500px) {
-  
+    .studyWrapper {
+        padding: 2em;
+    }
+    .containerQA {
+        height: 35vh;
+        width: 75%;
+    }
+    .answerForm {
+        width: 75%;
+    }
+    .answerInput {
+        font-size: 1.2em;
+    }
+    .checkButt {
+        font-size: 1.5em;
+    }
+    .nextButt,
+    .backButt {
+        margin-top: 25px;
+        padding-left: 1.8em;
+        padding-right: 1.8em;
+        font-size: 6.5em;
+    }
 }
