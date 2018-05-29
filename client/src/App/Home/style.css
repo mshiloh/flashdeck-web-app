@@ -6,21 +6,23 @@
     align-items: center;
     background: whitesmoke;
     list-style: none;
-overflow: scroll;    
-width: 100vw;
+    overflow: scroll;
+}
+
+.homeContainer {
+    width: 90vw;
 }
 
 .homeHeader {
     text-align: center;
-    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-style: italic;
     font-weight: 600;
-    padding: 1em;
     font-size: 1.1em;
 }
 
 .homeUl {
-    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,8 +30,6 @@ width: 100vw;
 
 .homeUl .homeLi {
     height: auto;
-    overflow: hidden;
-    display: block;
     text-decoration: none;
     color: whitesmoke;
     background-image: linear-gradient(to right, #F7B733 50%, #4ABDAC 50%);
@@ -42,8 +42,7 @@ width: 100vw;
     cursor: pointer;
     height: auto;
     overflow: visible;
-    width: 90vw;
-    padding: 1.5vw 3vw 1.5vw 6vw;
+    padding: 12px 12px 12px 25px;
 }
 
 .homeUl .homeLi:hover {
@@ -55,7 +54,7 @@ width: 100vw;
 }
 
 .homeLi {
-    margin-bottom: 2vw;
+    margin-bottom: .5em;
     font-size: 1.25em;
 }
 
@@ -69,22 +68,13 @@ width: 100vw;
 /* Large Mobile / Portrait Tablet */
 
 @media only screen and (min-width: 600px) {
-    .homeWrapper {
-        padding: 3vw;
-        padding-right: 5vw;
-    }
     .homeHeader {
-        font-size: 1em;
-        padding: .5em;
-    }
-    .homeUl .homeLi {
-        padding: 1vw 2vw 1vw 6vw;
-    }
-    .homeUl .homeLi:hover {
-        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 1.5em;
     }
     .homeLi {
-        font-size: 4vw;
+        font-size: 1.7em;
     }
 }
 
@@ -92,77 +82,59 @@ width: 100vw;
 
 @media only screen and (min-width: 768px) {
     .homeHeader {
-        font-size: 2.7vw;
-        margin-top: -25px;
-    }
-    .homeUl {
-        margin: 0;
-        padding: 1vw;
-    }
-    .homeUl .homeLi {
-        padding: .5vw 2vw .5vw 6vw;
-    }
-    .homeUl .homeLi:hover {
-        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 1.5em;
     }
     .homeLi {
-        font-size: 3vw;
+        font-size: 1.7em;
     }
 }
 
 /* Laptop/Desktop */
 
 @media only screen and (min-width: 992px) {
-    .homeWrapper {
-        padding-left: 10vw;
-        padding-right: 10vw;
+    .homeContainer {
+        width: 80vw;
     }
     .homeHeader {
-        font-size: 2.7vw;
-        padding: .5vw;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 1.5em;
     }
-    .homeUl .homeLi {
-        padding: .8vw 1.8vw .8vw 4.5vw;
-    }
-    .homeUl .homeLi:hover {
-        padding: 10px;
+    .homeLi {
+        font-size: 1.7em;
     }
 }
 
 /* Large Desktop */
 
 @media only screen and (min-width: 1200px) {
-    .homeWrapper {
-        padding-left: 15vw;
-        padding-right: 15vw;
+    .homeContainer {
+        width: 75vw;
     }
     .homeHeader {
-        font-size: 2.3vw;
-        padding: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 1.5em;
     }
-    .homeUl .homeLi {
-        padding: .5vw 1.5vw .5vw 3vw;
-    }
-    .homeUl .homeLi:hover {
-        padding: 10px;
+    .homeLi {
+        font-size: 1.7em;
     }
 }
 
 /* Extra Large Desktop */
 
 @media only screen and (min-width: 1500px) {
-    .homeWrapper {
-        padding-left: 15vw;
-        padding-right: 15vw;
+    .homeContainer {
+        width: 75vw;
     }
     .homeHeader {
-        font-size: 2vw;
-        margin-top: -3.5vw;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 1.5em;
     }
-    .homeUl .homeLi {
-        padding: .5vw 1.5vw .5vw 2.5vw;
-    }
-    .homeUl .homeLi:hover {
-        padding: 10px;
+    .homeLi {
+        font-size: 1.7em;
     }
 }

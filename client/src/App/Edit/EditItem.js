@@ -47,14 +47,18 @@ class EditItem extends Component {
         const { question, answer, _id, endpoint } = this.state.inputs;
         return (
             <form onSubmit={this.handleSubmit} className="editForm">
+
+                <input onChange={this.handleChange} className="editQuestion" type="text" value={question} name="question" />
+
+                <input onChange={this.handleChange} className="editAnswer" type="text" value={answer} name="answer" />
+
+                <div className="saveDeleteWrapper">
+                    <div className="saveDeleteContainer">
+                        <button className="saveButt">Save</button>
+                        <button className="deleteButt" onClick={this.handleDelete}>Delete</button>
+                    </div>
+                </div>
                 
-                    <input onChange={this.handleChange} className="editQuestion" type="text" value={question} name="question" />
-
-                    <input onChange={this.handleChange} className="editAnswer" type="text" value={answer} name="answer" />
-                    
-                <button className="saveButt">Save</button>
-
-                <button className="deleteButt" onClick={this.handleDelete}>Delete</button>
             </form>
         )
     }

@@ -3,8 +3,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: scroll;
-    padding: 2.5vw;
+    padding: 1.5em;
+    height: 100vw;
     flex: 3.5;
 }
 
@@ -19,29 +19,23 @@
 .containerQ {
     background: #4ABDAC;
     color: white;
-    padding: 20px;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    min-height: 100px;
-    height: 30vh;
-    width: 80vw;
-    font-size: 5.5vh;
-    font-size: 6vw;
+    padding: 20px;
+    height: 40vh;
 }
 
 .correctAnswer {
-    margin-top: 10px;
-    padding: 10px;
-    color: rgb(14, 107, 14);
-    font-size: 5vw;
-    font-weight: 900;
+    background: #4ABDAC;
+    color: white;
+    display: flex;
     text-align: center;
-    margin-top: 10px;
-    padding: 10px;
-    font-size: 5vw;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 40vh;
 }
 
 .answerForm {
@@ -49,27 +43,21 @@
     justify-content: center;
     align-items: center;
     background-color: none;
-    padding: 10px;
-    overflow: visible;
+    margin-top: 5px;
 }
 
 .answerInput {
     font-weight: 600;
-    background: white;
-    padding: 10px;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-    width: 80vw;
-    font-size: 4.5vw;
+    padding: 5px;
+    width: 82vw;
+    font-size: 1em;
 }
 
 .checkWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-    margin-top: 10px;
+    margin: 20px;
 }
 
 .checkButt {
@@ -87,7 +75,7 @@
     color: #F7B733;
     border: solid 3.5px #F7B733;
     font-weight: 500;
-    font-size: 4.5vw;
+    font-size: 1.3em;
 }
 
 .checkButt:hover {
@@ -104,207 +92,69 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 5vw;
-    padding-left: 5vw;
 }
 
 .nextButt,
 .backButt {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     cursor: pointer;
     text-align: center;
     background: none;
     border: none;
-    margin-bottom: 20px;
+    margin-top: 30px;
     color: #4ABDAC;
     height: auto;
     width: auto;
-    transition-duration: .5s;
-    font-size: 22vw;
+    transition-duration: .2s;
+    font-size: 5em;
 }
 
 .nextButt:hover,
 .backButt:hover {
     cursor: pointer;
     color: #FC4A1A;
-    font-weight: 700;
+}
+
+.nextButt:focus,
+.backButt:focus {
+    outline: none;
 }
 
 /* Large Mobile / Portrait Tablet */
 
 @media only screen and (min-width: 600px) {
-    .containerQ {
-        height: 20vh;
-        font-size: 4vh;
-        font-size: 4vw;
+    /* .containerQ {
     }
     .answerForm {
-        padding: 10px;
     }
     .answerInput {
-        font-size: 3.4vw;
     }
     .checkButt {
-        font-size: 3.5vw;
     }
     .nextButt,
     .backButt {
-        font-size: 20vw;
-    }
+    } */
 }
 
 /* Tablet */
 
 @media only screen and (min-width: 768px) {
-    .wrapperQA {
-        padding-bottom: 20px;
-        padding-top: 10px;
-    }
-    .containerQ {
-        height: 20vh;
-        font-size: 3.5vh;
-        font-size: 3.5vw;
-    }
-    .answerForm {
-        padding: 10px;
-    }
-    .answerInput {
-        padding-top: 2.5vw;
-        padding-bottom: 2.5vw;
-        font-size: 3vw;
-    }
-    .checkWrapper {
-        padding: 20px;
-        margin-bottom: 10px;
-    }
-    .checkButt {
-        font-size: 3vw;
-    }
-    .nextButt,
-    .backButt {
-        margin-left: 7vw;
-        margin-right: 7vw;
-        width: 7vw;
-        font-size: 16vw;
-    }
+  
 }
 
 /* Laptop/Desktop */
 
 @media only screen and (min-width: 992px) {
-    .containerQ {
-        height: 20vh;
-        font-size: 2.5vh;
-        font-size: 2.5vw;
-    }
-    .answerForm {
-        padding: 10px;
-        margin-bottom: 20px;
-    }
-    .answerInput {
-        padding-top: 2vw;
-        padding-bottom: 2vw;
-        font-size: 3vw;
-    }
-    .checkWrapper {
-        margin: 1.8vw;
-    }
-    .checkButt {
-        font-size: 2.5vw;
-    }
-    .nextButt,
-    .backButt {
-        width: 6vw;
-        font-size: 12vw;
-    }
+  
 }
 
 /* Large Desktop */
 
 @media only screen and (min-width: 1200px) {
-    .wrapperQA {
-        padding-bottom: 20px;
-        padding-top: 30px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .containerQ {
-        height: 35vh;
-        width: 50vw;
-        padding: 10px;
-        min-height: 125px;
-        font-size: 2vh;
-        font-size: 2.5vw;
-    }
-    .answerForm {
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-    .answerInput {
-        padding-top: 1.5vw;
-        padding-bottom: 1.5vw;
-        font-size: 2.2vw;
-        width: 50vw;
-    }
-    .checkWrapper {
-        padding: 10px;
-        margin-bottom: 20px;
-    }
-    .checkButt {
-        font-size: 1.5vw;
-    }
-    .nextBackWrapper {
-        padding-right: 18vw;
-        padding-left: 18vw;
-    }
-    .nextButt,
-    .backButt {
-        width: 4vw;
-        font-size: 10vw;
-    }
+
 }
 
 /* Extra Large Desktop */
 
 @media only screen and (min-width: 1500px) {
-    .wrapperQA {
-        padding-bottom: 20px;
-        padding-top: 30px;
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    .containerQ {
-        height: 35vh;
-        font-size: 2vh;
-        width: 50vw;
-        font-size: 2vw;
-        padding: 10px;
-        min-height: 125px;
-    }
-    .answerForm {
-        padding: 20px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-    .answerInput {
-        font-size: 2vw;
-        width: 50vw;
-    }
-    .checkWrapper {
-        padding: 10px;
-    }
-    .checkButt {
-        font-size: 1.5vw;
-    }
-    .nextBackWrapper {
-        padding-right: 17vw;
-        padding-left: 17vw;
-    }
-    .nextButt,
-    .backButt {
-        width: 4vw;
-        font-size: 8vw;
-    }
+  
 }

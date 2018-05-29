@@ -76,11 +76,16 @@ class Edit extends Component {
 
                         <div className="editTitleWrapper">
                             <h3 className="titleHeader">Deck Title</h3>
-                            <input onChange={this.handleChange} type="text" value={title} />
+                            <input className="editTitle" onChange={this.handleChange} type="text" value={title} />
                         </div>
-                            <button className="saveButt">Save</button>
 
-                            <button className="deleteButt" onClick={this.handleDelete}>Delete</button>
+                        <div className="saveDeleteWrapper">
+                            <div className="saveDeleteContainer">
+                                <button className="saveButt">Save</button>
+                                <button className="deleteButt" onClick={this.handleDelete}>Delete</button>
+                            </div>
+                        </div>
+
                     </form>
 
                     <h3 className="qAndAHeader">Flashcards</h3>

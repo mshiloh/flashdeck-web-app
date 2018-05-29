@@ -31,6 +31,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 10em;    
     width: 100vw;
 }
 
@@ -41,7 +42,7 @@ body {
     align-items: center;
     align-content: center;
     width: 100vw;
-    padding: 5px;
+    padding: 15px;
 }
 
 .headerText {
@@ -49,7 +50,7 @@ body {
     font-family: 'Bree Serif', serif;
     display: block;
     float: left;
-    font-size: 4em;
+    font-size: 3.6em;
 }
 
 .icon {
@@ -57,7 +58,7 @@ body {
     float: right;
     overflow: auto;
     height: 100%;
-    width: 12em;
+    width: 10em;
 }
 
 nav {
@@ -76,9 +77,15 @@ nav {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    padding: .5em;
+    padding: 5px;
     color: whitesmoke;
-    font-size: 1.1em;
+    font-size: 1.15em;
+}
+
+.managerLink:hover,
+.homeLink:hover {
+    letter-spacing: 1px;
+    font-weight: 750;
 }
 
 .footerWrapper {
@@ -106,7 +113,7 @@ footer {
 
 @media only screen and (min-width: 600px) {
     .headerWrapper {
-        min-height: 20em;
+        min-height: 18em;
     }
     .headerContainer {
         flex-direction: row;
@@ -119,12 +126,12 @@ footer {
         height: auto;
         padding: 8px;
     }
-
     .icon {
         width: 14em;
     }
     .homeLink,
-    .managerLink, {
+    .managerLink,
+        {
         padding: .1em;
         font-size: 3em;
     }
@@ -134,10 +141,16 @@ footer {
     }
 }
 
-@media only screen and (max-height: 675px) {
+@media only screen and (max-height: 715px) {
+    .headerWrapper {
+        min-height: 12em;
+    }
     .headerContainer {
         display: flex;
         flex-direction: row;
+    }
+    .icon {
+        height: 100%;
     }
 }
 
@@ -145,61 +158,32 @@ footer {
 
 @media only screen and (min-width: 768px) {
     .headerWrapper {
-        min-height: 175px;
-    }
-    .headerText {
-        padding: 5px;
-        font-size: 10vw;
-        font-weight: 600;
-        margin-top: 20px;
-        padding-bottom: 30px;
-    }
-    .navWrapper {
-        height: auto;
-        padding: 8px;
-    }
-    .homeLink,
-    .managerLink {
-        font-size: 3.2vw;
-    }
-    footer {
-        padding: 1.5vw;
-        font-size: 2vw;
-    }
-}
-
-/* Landscape Tablet */
-
-@media only screen and (min-width: 768px) {
-    .headerWrapper {
-        min-height: 200px;
+        min-height: 20em;
     }
     .headerContainer {
-        display: flex;
         flex-direction: row;
     }
     .headerText {
-        padding: 5px;
-        font-size: 8.5vw;
+        font-size: 5em;
         font-weight: 600;
-        margin-top: 20px;
-        padding-bottom: 30px;
-    }
-    .icon {
-        height: 30%;
-        width: 30%;
     }
     .navWrapper {
         height: auto;
         padding: 8px;
     }
+    .icon {
+        height: 100%;
+        width: 14em;
+    }
     .homeLink,
-    .managerLink {
-        font-size: 2.7vw;
+    .managerLink
+        {
+        padding: 3px;
+        font-size: 1.3em;
     }
     footer {
-        padding: 1.5vw;
-        font-size: 2.2vw;
+        padding: 20px;
+        font-size: 1.1em;
     }
 }
 
@@ -207,30 +191,28 @@ footer {
 
 @media only screen and (min-width: 992px) {
     .headerWrapper {
-        min-height: 225px;
+        min-height: 20em;
     }
-    .headerText {
-        padding: 5px;
-        font-size: 7.5vw;
-        font-weight: 600;
-        margin-top: 20px;
-        padding-bottom: 30px;
-    }
-    .icon {
-        height: 25%;
-        width: 25%;
+    .headerContainer {
+        flex-direction: row;
     }
     .navWrapper {
         height: auto;
         padding: 8px;
     }
+    .icon {
+        height: 100%;
+        width: 14em;
+    }
     .homeLink,
-    .managerLink {
-        font-size: 2vw;
+    .managerLink,
+        {
+        padding: 5px;
+        font-size: 2px;
     }
     footer {
-        padding: 1.8vw;
-        font-size: 1.6vw;
+        padding: 21.5px;
+        font-size: 1.2em;
     }
 }
 
@@ -238,30 +220,28 @@ footer {
 
 @media only screen and (min-width: 1200px) {
     .headerWrapper {
-        min-height: 225px;
+        min-height: 17em;
     }
-    .headerText {
-        padding: 5px;
-        font-size: 6.5vw;
-        font-weight: 600;
-        margin-top: 20px;
-        padding-bottom: 30px;
-    }
-    .icon {
-        height: 20%;
-        width: 20%;
+    .headerContainer {
+        flex-direction: row;
     }
     .navWrapper {
         height: auto;
         padding: 8px;
     }
+    .icon {
+        height: 100%;
+        width: 14em;
+    }
     .homeLink,
-    .managerLink {
-        font-size: 1.5vw;
+    .managerLink,
+        {
+        padding: 5px;
+        font-size: 2px;
     }
     footer {
-        padding: 1vw;
-        font-size: 1.2vw;
+        padding: 21.5px;
+        font-size: 1.2em;
     }
 }
 
@@ -269,29 +249,27 @@ footer {
 
 @media only screen and (min-width: 1500px) {
     .headerWrapper {
-        min-height: 225px;
+        min-height: 17em;
     }
-    .headerText {
-        padding: 5px;
-        font-size: 6vw;
-        font-weight: 600;
-        margin-top: 20px;
-        padding-bottom: 30px;
+    .headerContainer {
+        flex-direction: row;
     }
     .navWrapper {
         height: auto;
-        padding: 6px;
+        padding: 8px;
     }
     .icon {
-        height: 14%;
-        width: 14%;
+        height: 100%;
+        width: 14em;
     }
     .homeLink,
-    .managerLink {
-        font-size: 1.2vw;
+    .managerLink,
+        {
+        padding: 5px;
+        font-size: 2px;
     }
     footer {
-        padding: 1vw;
-        font-size: 1vw;
+        padding: 21.5px;
+        font-size: 1.2em;
     }
 }

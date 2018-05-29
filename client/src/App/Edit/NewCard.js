@@ -49,8 +49,6 @@ class NewCard extends Component {
 
                 <form onSubmit={this.handleSubmit} className="newCardForm">
 
-                    {/* <div className="addNewCardFormWrapper"> */}
-
                     <p onClick={this.toggleAddForm} className="addNewCardButt">Add New Card</p>
 
                         {this.state.showAddForm && <input onChange={this.handleChange} className="newQuestion" type="text" value={question} name="question" placeholder="Enter question..." />}
@@ -58,8 +56,6 @@ class NewCard extends Component {
                         {this.state.showAddForm && <input onChange={this.handleChange} className="newAnswer" type="text" value={answer} name="answer" placeholder="Enter answer..." />}
 
                         {this.state.showAddForm && <button className="saveButt">Save</button>}
-
-                    {/* </div> */}
 
                 </form>
 
