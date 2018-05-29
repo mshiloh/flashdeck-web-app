@@ -63,7 +63,7 @@ export const getCards = () => {
             .catch(err => {
                 dispatch({
                     type: "ERR_MSG",
-                    errMsg: "Sorry, your data is unavailable"
+                    errMsg: "Sorry, your data is unavailable."
                 });
             });
     }

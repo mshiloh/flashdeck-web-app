@@ -6,6 +6,7 @@
     align-items: center;
     background: whitesmoke;
     list-style: none;
+    overflow: scroll;    
     width: 100vw;
 }
 
@@ -37,6 +38,7 @@
     -moz-transition: all 0.25s ease-in;
     transition: all 0.25s ease-in;
     cursor: pointer;
+    overflow: visible;    
     width: 90vw;
 }
 

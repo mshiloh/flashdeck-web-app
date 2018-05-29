@@ -36,6 +36,7 @@ body {
 
 .headerContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -48,14 +49,15 @@ body {
     font-family: 'Bree Serif', serif;
     display: block;
     float: left;
+    font-size: 4em;
 }
 
 .icon {
     display: block;
     float: right;
     overflow: auto;
-    height: 40%;
-    width: 40%;
+    height: 100%;
+    width: 12em;
 }
 
 nav {
@@ -74,8 +76,9 @@ nav {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
+    padding: .5em;
     color: whitesmoke;
-    font-size: 3.5vw;
+    font-size: 1.1em;
 }
 
 .footerWrapper {
@@ -91,8 +94,8 @@ footer {
     display: flex;
     align-items: center;
     bottom: 0;
-    padding: 2.5vw;
-    font-size: 2.8vw;
+    padding: .7em;
+    font-size: 1em;
     flex: .1;
 }
 
@@ -101,15 +104,15 @@ footer {
 
 /* Small Mobile*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
     .headerWrapper {
-        min-height: 125px;
+        min-height: 20em;
     }
     .headerContainer {
-        flex-direction: column;
+        flex-direction: row;
     }
     .headerText {
-        font-size: 10vw;
+        font-size: 4.5em;
         font-weight: 600;
     }
     .navWrapper {
@@ -118,12 +121,12 @@ footer {
     }
 
     .icon {
-        height: 40%;
-        width: 40%;
+        width: 14em;
     }
     .homeLink,
     .managerLink, {
-        font-size: 3.5vw;
+        padding: .1em;
+        font-size: 3em;
     }
     footer {
         padding: 1.8vw;
@@ -131,9 +134,16 @@ footer {
     }
 }
 
+@media only screen and (max-height: 675px) {
+    .headerContainer {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 /* Large Mobile / Portrait Tablet */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
     .headerWrapper {
         min-height: 175px;
     }
@@ -163,6 +173,10 @@ footer {
 @media only screen and (min-width: 768px) {
     .headerWrapper {
         min-height: 200px;
+    }
+    .headerContainer {
+        display: flex;
+        flex-direction: row;
     }
     .headerText {
         padding: 5px;
