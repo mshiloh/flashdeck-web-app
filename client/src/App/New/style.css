@@ -8,11 +8,23 @@
 }
 
 .newTitle {
-    color: #FFF8E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    color: black;
+    font-weight: 600;
+    font-size: 1.4em;
 }
 
 .newTitle::placeholder {
-    color: #FFF8E1;
+ color: dimgray;
+}
+
+.newTitle:focus {
+    outline: none;
+    border-color: #F7B733;
+    box-shadow: 0 0 10px rgb(83, 63, 22);
 }
 
 .saveNewButt {
@@ -20,22 +32,6 @@
 }
 
 /* -------------------------------------------------------------------- */
-
-/* Small Mobile*/
-
-@media only screen and (max-width: 600px) {
-    .newWrapper {
-     padding: 30px;
-    }
-    .newTitle {
-        height: 10vw;
-        font-size: 7vw;
-    }
-    
-    .saveNewButt {
-        font-size: 4vw;
-    }
-}
 
 /* Large Mobile / Portrait Tablet */
 
