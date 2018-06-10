@@ -90,6 +90,7 @@ nav {
 
 .footerWrapper {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
     background: #FC4A1A;
@@ -104,6 +105,15 @@ footer {
     padding: .7em;
     font-size: 1em;
     flex: .1;
+}
+
+.portfolioLink {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.portfolioLink:hover {
+    text-decoration: underline;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Didact+Gothic|Dosis:200,300,400,500,600,700,800|Jura:300,400,600,700|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Oxygen:300,400,700|Poiret+One|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Questrial|Quicksand:300,400,500,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Righteous|Work+Sans:100,200,300,400,500,600,700,800,900&subset=latin-ext');
